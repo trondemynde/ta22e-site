@@ -18,7 +18,7 @@ jobs:
 
     - name: connect and pull
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} \
-        "cd ${{ vars.WORK_DIR }} && git checkout -b main && git pull && exit"
+        "cd ${{ vars.WORK_DIR }} && git checkout main && git pull && exit"
 
     - name: Cleanup SSH keys
       run: rm -rf ~/.ssh
