@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paigutamine 4</title>
+    <link rel="icon" type="pildid/png" href="/pildid/favicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .frame-1,
+        .frame-1 * {
+            box-sizing: border-box;
+        }
+
+        .frame-1 {
+            background: #a4a4a4;
+            width: 1920px;
+            height: 1999px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rectangle {
+            height: 20px;
+            margin: 5px;
+            background-color: #d9d9d9;
+        }
+        /* header */
+        .rectangle-1 {
+            width: 960px;
+            position: absolute;
+            left: calc(50% - 480px);
+            top: 75px;
+            height: 122px;
+            border-radius: 25px;
+            background: #352828;
+        }
+        /* nav */
+        .rectangle-2 {
+            width: 960px;
+            position: absolute;
+            left: calc(50% - 480px);
+            top: 199px;
+            height: 76px;
+            background: #615252;
+            border-radius: 25px;
+        }
+        /* footer */
+        .rectangle-8 {
+            width: 960px;
+            position: absolute;
+            left: calc(50% - 479px);
+            top: 1470px;
+            height: 76px;
+            background: #615252;
+            border-radius: 5px;
+        }
+
+        .header,
+        .nav,
+        .header-nav,
+        .main-article,
+        .main-aside,
+        .section-article-3,
+        .footer {
+            color: #000000;
+            text-align: left;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 44px;
+            font-weight: 400;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .header, .nav, .header-nav {
+            display: flex;
+        }
+
+        .header, .nav {
+            flex: 1;
+        }
+
+        .header {
+            position: absolute;
+            left: calc(50% - 73px);
+            top: 60px;
+            left: 470px;
+            font-size: 60px;
+            
+        }
+
+        .nav button{
+            position: absolute;
+            left: calc(50% - 453px);
+            top: 207px;
+            height: 70px;
+            width: 120px;
+            border-radius: 20px;
+
+        }
+
+        .header-nav {
+            position: absolute;
+            left: calc(50% - 340px);
+            top: 198px;
+        }
+        .header-nav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+        /* main aside */
+        .rectangle-3 {
+            width: 296px;
+            height: 560px;
+            position: absolute;
+            left: calc(50% - -184px);
+            top: 280px;
+            background: #7B6161;
+            border-radius: 25px;
+            padding: 20px;
+        }
+        /* section1 */
+        .rectangle-5 {
+            width: 296px;
+            height: 560px;
+            position: absolute;
+            left: calc(50% - 480px);
+            top: 850px;
+            background: #7B6161;
+            border-radius: 25px;
+            padding: 20px;
+        }
+        /* section2 */
+        .rectangle-6 {
+            width: 296px;
+            height: 560px;
+            position: absolute;
+            left: calc(50% - 148px);
+            top: 850px;
+            background: #7B6161;
+            border-radius: 25px;
+            padding: 20px;
+        }
+        /* section3 */
+        .rectangle-7 {
+            width: 296px;
+            height: 560px;
+            position: absolute;
+            left: calc(50% - -184px);
+            top: 850px;
+            background: #7B6161;
+            border-radius: 25px;
+            padding: 20px;
+        }
+        /* main */
+        .rectangle-4 {
+            width: 628px;
+            height: 562px;
+            position: absolute;
+            left: calc(50% - 480px);
+            top: 280px;
+            background: #7B6161;
+            border-radius: 25px;
+            padding: 40px;
+        }
+
+        .main-article {
+            position: absolute;
+            left: 652px;
+            top: 429px;
+        }
+
+        .main-aside {
+            position: absolute;
+            left: 1159px;
+            top: 429px;
+        }
+
+        .section-article-3 {
+            position: absolute;
+            left: calc(50% - 195px);
+            top: 927px;
+        }
+        .footer button{
+            position: absolute;
+            left: calc(50% - 453px);
+            top: 1478px;
+            height: 70px;
+            width: 120px;
+            border-radius: 5px;
+        }
+        .footer-txt{
+            position: absolute;
+            left: calc(50% - 80px);
+            top: 1478px;
+            font-size: 60px;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        ::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            text-transform: none;
+            text-indent: 0px !important;
+            text-align: start !important;
+            text-align-last: start !important;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame-1">
+        <div class="rectangle rectangle-1"></div>
+        <div class="rectangle rectangle-2"></div>
+        <div class="rectangle rectangle-8"></div>
+        
+        <div class="header">
+            <img src="/pildid/favicon.png" alt="l2bu" style="width: 120px;height: 120px;">
+            L2bu
+        </div>
+        <div class="nav"><button onClick="window.location.reload();">refresh</button></div>
+        <div class="header-nav"><input type="text" placeholder="Search.."></div>
+        
+        <div class="rectangle rectangle-3" draggable="true" class id contenteditable="true" data-content="1">
+            <article>
+                <h2 dir="rtl">Global attributes</h2>
+                <p autocapitalize="">
+                    Globaalseid omadusi võib seadistada kõikidele HTML elementidele. Mõned aga ei pruugi aga osadel elementidel efekti anda.
+                </p>
+                <form action="" inert  >
+                    <input type="text" autofocus="" placeholder="autofocusega">
+                    <input spellcheck="true" type="email" enterkeyhint="enter" placeholder="type=e-mail, keyhint=enter">
+                    <input type="email" enterkeyhint="next" placeholder="enterkeyhint=next">
+                    <input type="password" placeholder="*******">
+                    <input type="numeric" placeholder="0123456789">
+                    <input type="tel" placeholder="+372 544 233 5555">
+                    <input type="url" placeholder="http://www.domeen.ee">
+                </form>
+            </article>
+        </div>
+        
+        <div class="rectangle rectangle-5">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+
+        <div class="rectangle rectangle-6">
+            <div>
+                <span>
+                    Span#1, in the div
+                    <span>Span#2, in the span that`s in the div.</span>
+                </span>
+                </div>
+            <span>Span#3, not in div at all.</span>
+        </div>
+
+        <div class="rectangle rectangle-7" draggable="true" class id contenteditable="true" data-content="1">
+            <article>
+                <p lang="en-GB">This paragraph is defined as British English.</p>
+                <p lang="fr">Ce paragraphe est défini en français.</p>
+                <button popovertarget="my-popover">Open Popover</button>
+                <div popover="" id="my-popover">midaaaaaaaaaa!</div>
+            </article>
+        </div>
+
+        <div class="rectangle rectangle-4">
+            <article>
+            <h1>Paigutamine 4</h1>
+            <p>flex ja semantilised elemendid</p>
+            <details>midagi väikest<summary::marker></summary></details>
+            <section>
+                <p2 style="font-size: 25px;">Section 1</p2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dolorum ratione excepturi vero
+                    neque quidem fugiat accusantium! Obcaecati excepturi pariatur soluta nostrum aperiam magnam ullam
+                    nihil fugiat in, aliquid ex.</p>
+            </section>
+            <section>
+                <p2 style="font-size: 25px;">Section 2</p2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi minus vitae cupiditate quo, sed,
+                    sapiente neque tempore quis, at doloribus pariatur aliquid tenetur suscipit excepturi recusandae
+                    error odio impedit laboriosam.</p>
+            </section>
+            </article>
+        </div>
+        
+        <div class="main-article"></div>
+        <div class="main-aside"></div>
+        <div class="section-article-3"></div>
+        <div class="footer"><button id="myBtn"><a href="#top">go to top</a></button></div>
+        <div class="footer-txt">L2BU</div>
+    </div>
+</body>
+</html>
