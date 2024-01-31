@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pildid 3: SVG maja</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./css2" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+<script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script></head>
+
+<body>
+  <br>
+  <img src="./maja.png" alt="">
+  <h1>SVG </h1>
+  <ul>
+    <li><a href="http://tutorials.jenkov.com/svg/svg-coordinate-system.html">Paigutamine</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/circle-element.html">Ringid (uksenupp)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/rect-element.html">Ruudud (aknad-uksed)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/polyline-element.html">Hulkjoon (katus)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/svg-gradients.html">Värvi maja (kasutades värviüleminekuid)</a></li>
+    <li><a href="https://jenkov.com/tutorials/svg/svg-transformation.html#translate">SVG elemendi asukoha muutmine</a></li>
+  </ul>
+  <br>
+  <div class="raam">
+    <svg width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- muru -->
+      <rect x="200" y="320" height="300" width="400" style="fill: url(#mygradient);"></rect>
+      <!-- taevas -->
+      <rect x="200" y="200" height="200" width="400" style="fill: url(#mygradient1);"></rect>
+      <!-- korsten -->
+      <rect x="350" y="300" height="80" width="20" style="stroke:aliceblue; fill: rgb(43, 32, 32);"></rect>
+      <!-- katus -->
+      <!-- points="x,y x,y ..."  -->
+      <polyline id="katus" points="330,400 400,310 470,400" style= "stroke:aliceblue; fill: gray;"></polyline>
+
+      <!-- sein -->
+      <rect x="350" y="400" height="100" width="100" style= "stroke:aliceblue;fill: rgb(82, 50, 50);"></rect>
+
+      <!-- uks -->
+      <rect x="400" y="430" height="70" width="40" style="stroke:aliceblue; fill: rgb(112, 18, 18);"></rect>
+
+      <!-- aken -->
+      <rect x="355" y="430" height="40" width="40" style="stroke:aliceblue; fill: rgb(18, 193, 247);"></rect>
+
+      <!-- uksenupp -->
+      <circle cx="410" cy="470" r="7" style="stroke:aliceblue; fill: rgb(58, 41, 41);"></circle>
+      
+      
+      <defs>
+        <linearGradient id="mygradient"
+                        x1="0%" y1="0%"
+                        x2="0%" y2="100%"
+                        spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00cc00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+      
+      <defs>
+        <linearGradient id="mygradient1"
+                        x1="0%" y1="0%"
+                        x2="0%" y2="100%"
+                        spreadMethod="pad">
+          <stop offset="0%"   stop-color="#F75200" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#F5DD16" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+
+      
+
+    </svg>
+    <center>
+<marquee behavior="indefinete" direction="right" style="top:-300px; position: relative;width: 400px;">
+  <img src="car.png" alt="car">
+</marquee> 
+    </center>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sõnastik</title>
+    <style>
+        body{
+            background: blanchedalmond;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid #4d4a4a;
+            padding: 10px; 
+        }
+
+        th, td {
+            border: 1px solid #4d4a4a; 
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        }
+
+/* Tooltip text */
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Mõiste</th>
+            <th>Eestikeelne vaste</th>
+            <th>Eestikeelne seletus</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>charset</td>
+          <td>Märgistik</td>
+          <td>Määratleb, millise märgistikuga on veebilehe tekst kooditud.</td>
+        </tr>
+        <tr>
+          <td>inline element</td>
+          <td>Reasises element</td>
+          <td>HTML-i element, mis paigutub leheküljel rea sees ja ei sunni järgnevat sisu uuele reale.</td>
+        </tr>
+        <tr>
+            <td>block element</td>
+            <td>Blokk-element</td>
+            <td>HTML-i element, mis loob uue ploki või rea ja paigutab selle järgnevad elemendid uuele reale.</td>
+        </tr>
+          <tr>
+            <td>padding</td>
+            <td>Täite</td>
+            <td>Tühik elementi sisemise serva ja selle sisu vahel.</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>Vahemik</td>
+            <td>Tühik elemendi välise serva ja selle ümbritsevate elementide vahel.</td>
+          </tr>
+          <tr>
+            <td>shorthand</td>
+            <td>Lühend</td>
+            <td>Lühendatud või kompaktne viis millekski kirjeldada, sageli kasutatakse CSS-i omaduste lühendeid.</td>
+          </tr>
+          <tr>
+            <td>wireframe</td>
+            <td>veebimakett</td>
+            <td>Kavand, mis esitab lehekülje struktuuri ja paigutust ilma detailse sisu ja graafikata.</td>
+          </tr>
+          <tr>
+            <td>Media query</td>
+            <td>Meedia päring</td>
+            <td>CSS-i omadus, mis võimaldab kohandada stiile vastavalt seadmele, millega lehekülge vaadatakse.</td>
+          </tr>
+          <tr>
+            <td>hover</td>
+            <td>Hõljumine</td>
+            <td>Kursori liigutamine elemendi kohale ilma sellele klõpsamata; kasutatakse sageli interaktiivsuse lisamiseks.</td>
+          </tr>
+          <tr>
+            <td>border-box</td>
+            <td>Piirikast</td>
+            <td>CSS-i kasti mudel, kus elementi laius ja kõrgus sisaldavad paddingut ja piiri, mitte ainult sisu.</td>
+          </tr>
+          <tr>
+            <td>padding-box</td>
+            <td>Täitekast</td>
+            <td>CSS-i kasti mudel, kus elementi laius ja kõrgus sisaldavad ainult paddingut, mitte piiri ega sisu.</td>
+          </tr>
+          <tr>
+            <td>scroll</td>
+            <td>Kerimine</td>
+            <td>Liikumine lehekülje või elemendi sisu kuvatava piirkonna sees, kui sisu on suurem kui ekraan.</td>
+          </tr>
+          <tr>
+            <td>content stacking</td>
+            <td>Sisu kihistamine</td>
+            <td>Sisu kihiline paigutus, kus üks element asetseb teise kohal.</td>
+          </tr>
+          <tr>
+            <td><a href="">hypertext</a></td>
+            <td>Hüpertekst</td>
+            <td>Tekst, millel on lingid teistesse dokumentidesse või veebilehtedele.</td>
+          </tr>
+          <tr>
+            <td>hyperweb</td>
+            <td>Hüpervõrk</td>
+            <td>Terminus, mis võib viidata tuleviku arengutele veebis, kus hüperlingid ja muud suhtlusvahendid on veelgi integreeritumad.</td>
+          </tr>
+          <tr>
+            <td>viewport</td>
+            <td>Vaateaken</td>
+            <td>Aknaala, mille piires veebilehte vaadatakse; kasutatakse sageli mobiilsete seadmete ekraanide suuruse kirjeldamiseks.</td>
+          </tr>
+          <tr>
+            <td>semantic markup</td>
+            <td>Semantiline märgistus</td>
+            <td>HTML-i kirjutamise tava, kus kasutatakse elemente, mis kirjeldavad sisu tähendust, mitte ainult selle väljanägemist.</td>
+          </tr>
+          <tr>
+            <td>checkbox<input type="checkbox"></td>
+            <td>Märkeruut</td>
+            <td>Interaktiivne graafiline element, mida kasutatakse valikute lubamiseks või keelamiseks.</td>
+          </tr>
+          <tr>
+            <td>radio buttons</td>
+            <td>Raadionupud</td>
+            <td> Interaktiivne graafiline element, kus kasutaja saab valida ainult ühe valiku mitmest.</td>
+          </tr>
+          <tr>
+            <td>dropdown select<select><option value="Rippmenüü valik">Rippmenüü valik</option></select></td>
+            <td>Rippmenüü valik</td>
+            <td>Rippmenüü, mis lubab kasutajal valida ühe valiku paljude hulgast.</td>
+          </tr>
+          <tr>
+            <td>input</td>
+            <td>Sisend</td>
+            <td>Sisendvormi element, mis võimaldab kasutajal sisestada teksti, numbreid või valida valikuid.</td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>Keelatud</td>
+            <td> Olek või atribuut, mis keelab kasutajal interakteeruda või muuta teatud vormi elemente.</td>
+          </tr>
+          <tr>
+            <td class="tooltip">tooltip
+                <span class="tooltiptext">Viipetekst</span>
+            </td>
+            <td>Viipetekst</td>
+            <td>Väike infokast, mis ilmub kasutaja kursori kohale, et anda lisateavet.</td>
+          </tr>
+          <tr>
+            <td>toggle switch</td>
+            <td>Lülituslüliti</td>
+            <td>Lüliti, mis lubab kasutajal kiiresti sisse või välja lülitada mingit funktsiooni.</td>
+          </tr>
+          <tr>
+            <td>autocomplete</td>
+            <td>Automaatne täitmine</td>
+            <td>Funktsioon, mis pakub kasutajale automaatselt võimalikke täiendusi või valikuid sisestatud teksti põhjal.</td>
+          </tr>
+          <tr>
+            <td>slider</td>
+            <td>Libisti</td>
+            <td>Graafiline element, mida kasutatakse väärtuste vahemiku valimiseks, libistades kursorit mööda joont.</td>
+          </tr>
+          <tr>
+            <td>root element</td>
+            <td>Alguslement</td>
+            <td> HTML-i dokumenti kõrgeim element, mis hõlmab kogu lehekülge.</td>
+          </tr>
+          <tr>
+            <td>grid layout</td>
+            <td>Ruudustikpaigutus</td>
+            <td>CSS-i paigutussüsteem, mis võimaldab luua keerukaid kujundusi, jagades lehekülje ruudustikuks.</td>
+          </tr>
+          <tr>
+            <td>UI library</td>
+            <td>Kasutajaliidese raamatukogu</td>
+            <td>Kasutajaliidese (UI) komponentide kogum, mis on eelnevalt loodud ja taaskasutatav.</td>
+          </tr>
+          <tr>
+            <td>sidebar</td>
+            <td>Külgriba</td>
+            <td>Küljepaan või -riba, mis asub tavaliselt lehekülje ääres ja sisaldab täiendavat teavet või navigeerimist.</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
